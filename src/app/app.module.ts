@@ -10,9 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildAComponent } from './components/child-a/child-a.component';
+import { ChildBComponent } from './components/child-b/child-b.component';
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegisterComponent
+    AppComponent, LoginComponent, RegisterComponent, ParentComponent, ChildAComponent, ChildBComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,8 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
