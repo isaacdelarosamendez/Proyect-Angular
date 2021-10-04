@@ -11,13 +11,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
-
-import { ParentComponent } from './components/parent/parent.component';
-import { ChildAComponent } from './components/child-a/child-a.component';
-import { ChildBComponent } from './components/child-b/child-b.component';
+import { UsersComponent } from './components/users/users.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegisterComponent, ParentComponent, ChildAComponent, ChildBComponent
+    AppComponent, LoginComponent, RegisterComponent, UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +24,8 @@ import { ChildBComponent } from './components/child-b/child-b.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
