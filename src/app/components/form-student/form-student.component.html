@@ -1,0 +1,12 @@
+<h3>Estas agregando al estudiante No. {{students.length+1}}</h3>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="Name" [(ngModel)]="first_name">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="Name" [(ngModel)]="last_name">
+</mat-form-field>
+<br>
+
+<button mat-raised-button color="primary" (click)="onClicAdd()">Add</button>
